@@ -107,7 +107,7 @@ nav a:first-child {
 
 /*
 =============================================
-Univerdal Main Body Layout
+Universal Main Body Layout
 =============================================
 */
 
@@ -151,13 +151,13 @@ Portfolio Page Layout
 .work {
 	position: relative;
 	float: left;
-	width: 274px;
-	margin: 10px 10px 25px;
+	width: 275px;
+	margin: 5px 10px 5px;
 	overflow: auto;
 }
 
 .work:nth-child(even) {
-	margin-right: 15px;
+	margin-right: 10px;
 }
 
 .work img {

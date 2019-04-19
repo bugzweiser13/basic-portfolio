@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-<title>...Contact...</title>
+<title>...Contact Me...</title>
 <link rel="icon"  href="favicon.ico"/>
 <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -24,22 +24,18 @@
     <div id="main_container" class="container">
         <section class="main_body">
             <h1>Contact</h1>
-                <form id="contact_body">
-                      <ul>
-                         <li>
-                             <label for="name">Name</label>
-                                 <input type="text" id="name" name="name" value="John Smith" onfocus="this.value=''" onblur="(this.value=='')? this.value='John Smith':this.value;" required="required">
-                         </li>
-                         <li>
-                             <label for="email">Email</label>
-                                 <input type="email" id="email" name="email" value="example@gmail.com" onfocus="this.value=''" onblur="(this.value=='')? this.value='example@gmail.com':this.value;" required="required">
-                            </li>
-                         <li>
-                             <label for="message">Message</label>
-                                 <textarea id="message" name="message" placeholder="Please enter message to me here." onfocus="this.placeholder=''" onblur="(this.placeholder=='')? this.placeholder='Please enter message to me here.':this.value;" required="required"required="required"></textarea>
-                            </li>
-                        </ul>
-                    <input type="submit" title="Submit Information">
+                <form id="contact_body" action="mailto:bugzweiser@gmail.com?subject=Hello%20I%20visited%20your%20page" method="post" enctype="text/plain">
+                   <label for="name">Name</label>
+                        <input type="text" id="name" name="Name" value="John Smith" onfocus="this.value=''" onblur="(this.value=='')? this.value='John Smith':this.value;">
+                            <br>
+                    <label for="email">Email</label>
+                        <input type="email" id="email" name="Email" value="example@gmail.com" onfocus="this.value=''" onblur="(this.value=='')? this.value='example@gmail.com':this.value;">
+                            <br>
+                    <label for="message">Message</label>
+                        <textarea id="message" name="Message" placeholder="Please enter message to me here (150 characters)." onfocus="this.placeholder=''" onblur="(this.placeholder=='')? this.placeholder='Please enter message to me here (150 characters).':this.value;" required="required"required="required" maxlength="150"></textarea>
+                            <br>
+                    <button type="submit" title="Submit Information">Submit</button>
+                    <button type="reset" title="Reset">Reset</button>
                 </form>
                 
         </section>

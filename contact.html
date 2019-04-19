@@ -12,34 +12,34 @@
 
     <header id="header">
         <div class="container">
-            <a href="index.html" id="logo">Jason Emerson</a></h1>
+            <a href="index.html" id="logo" title="Main Page">Jason Emerson</a>
                 <nav>
-                    <a href="index.html">About</a>
-                    <a href="portfolio.html">Portfolio</a>
-                    <a href="contact.html">Contact</a>
+                    <a href="index.html" title="Main Page">About</a>
+                    <a href="portfolio.html" title="My Portfolio">Portfolio</a>
+                    <a href="contact.html" title="Contact Info">Contact</a>
                 </nav>
         </div>
-    </header>
+        </header>
 
-    <div id="main-container" class="container">
+    <div id="main_container" class="container">
         <section class="main_body">
             <h1>Contact</h1>
-                <form id="contact-form">
+                <form id="contact_body">
                       <ul>
                          <li>
                              <label for="name">Name</label>
-                                 <input type="text" id="name" name="name" placeholder="John Smith" required="required">
+                                 <input type="text" id="name" name="name" value="John Smith" onfocus="this.value=''" onblur="(this.value=='')? this.value='John Smith':this.value;" required="required">
                          </li>
                          <li>
                              <label for="email">Email</label>
-                                 <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
+                                 <input type="email" id="email" name="email" value="example@gmail.com" onfocus="this.value=''" onblur="(this.value=='')? this.value='example@gmail.com':this.value;" required="required">
                             </li>
                          <li>
                              <label for="message">Message</label>
-                                 <textarea id="message" name="message" required="required"></textarea>
+                                 <textarea id="message" name="message" placeholder="Please enter message to me here." onfocus="this.placeholder=''" onblur="(this.placeholder=='')? this.placeholder='Please enter message to me here.':this.value;" required="required"required="required"></textarea>
                             </li>
                         </ul>
-                    <input type="submit">
+                    <input type="submit" title="Submit Information">
                 </form>
                 
         </section>

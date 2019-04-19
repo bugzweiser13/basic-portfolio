@@ -9,6 +9,11 @@ body {
 	box-sizing: border-box;
 }
 
+/*
+=============================================
+General Layout
+=============================================
+*/
 
 .container {
 	width: 100%;
@@ -47,6 +52,11 @@ h3 {
 	font-size: 22px;
 }
 
+/*
+=============================================
+Universal Header Layout
+=============================================
+*/
 
 #header {
     position: fixed;
@@ -73,7 +83,6 @@ nav {
 	float: right;
 	margin-top: 25px;
 }
-
 nav a {
 	display: inline-block;
 	padding-left: 15px;
@@ -85,7 +94,6 @@ nav a {
     letter-spacing: .5px;
 	border-left: 1px solid #efefef;
 }
-
 nav a:first-child {
 	border-left: 0 none;
 }
@@ -97,11 +105,16 @@ nav a:first-child {
     color: #ff0000;
 }
 
+/*
+=============================================
+Univerdal Main Body Layout
+=============================================
+*/
+
 #main_container {
     padding-top: 130px;
     min-height: calc(100vh - 70px);
 }
-
 .main_body {
 	float: left;
     width: 100%;
@@ -116,7 +129,11 @@ nav a:first-child {
     margin-right: 1%;
 }
 
-
+/*
+=============================================
+Universal Footer Layout
+=============================================
+*/
 .footer {
     height: 70px;
     border-top: 8px solid #4aaaa5;
@@ -124,4 +141,85 @@ nav a:first-child {
     padding: 20px;
     color: white;
     text-align: center;
+}
+
+/*
+=============================================
+Portfolio Page Layout
+=============================================
+*/
+.work {
+	position: relative;
+	float: left;
+	width: 274px;
+	margin: 10px 10px 25px;
+	overflow: auto;
+}
+
+.work:nth-child(even) {
+	margin-right: 15px;
+}
+
+.work img {
+	width: 100%;
+	border: 0 none;
+	opacity: 0.8;
+}
+
+.work h3 {
+	position: absolute;
+	bottom: 20px;
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 0;
+	font-weight: 250;
+	line-height: 25px;
+	color: #fff;
+	text-align: center;
+	background: #4aaaa5;
+	border-bottom: 0;
+}
+
+/*
+=============================================
+Contact Page Layout
+=============================================
+*/
+#contact_body ul {
+	margin-bottom: 20px;
+}
+
+#contact_body li {
+	margin-bottom: 10px;
+}
+
+label,
+input[type=text],
+input[type=email],
+textarea {
+	display: block;
+    width: 100%;
+    color: #777;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+	height: 35px;
+	padding: 0 10px;
+	font-size: 14px;
+	border: 1px solid #ddd;
+}
+
+textarea {
+	height: 200px;
+}
+
+input[type=submit] {
+	padding: 10px 30px;
+	font-size: 18px;
+	color: #fff;
+	cursor: pointer;
+	background: #4aaaa5;
+	border: 0 none;
 }

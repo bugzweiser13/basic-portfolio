@@ -28,10 +28,6 @@ p {
 	margin-bottom: 20px;
 }
 
-p:last-child {
-	margin-bottom: 0;
-}
-
 h1,
 h2,
 h3 {
@@ -94,13 +90,6 @@ nav a {
     letter-spacing: .5px;
 	border-left: 1px solid #efefef;
 }
-nav a:first-child {
-	border-left: 0 none;
-}
-.header a {
-    color: #777777;
-    text-decoration: none;
-}
 .header a:hover  {
     color: #ff0000;
 }
@@ -112,17 +101,20 @@ Universal Main Body Layout
 */
 
 #main_container {
-    padding-top: 130px;
-    min-height: calc(100vh - 70px);
+    padding-top: 110px;
+	min-height: calc(100vh - 70px);
+	overflow: auto;
 }
 .main_body {
 	float: left;
+	margin: 5% auto 2% auto;
     width: 100%;
 	max-width: 960px;
-    padding: 30px;
+    padding: 20px;
     text-align: justify;
 	background: #fff;
-    border: 1px solid #ddd;
+	border: 1px solid #ddd;
+	
 }
 .main_body img {
     float: left;
@@ -135,7 +127,7 @@ Universal Footer Layout
 =============================================
 */
 .footer {
-    height: 70px;
+	height: 70px;
     border-top: 8px solid #4aaaa5;
     background: #666666;
     padding: 20px;
@@ -177,7 +169,6 @@ Portfolio Page Layout
 	color: #fff;
 	text-align: center;
 	background: #4aaaa5;
-	border-bottom: 0;
 }
 
 /*

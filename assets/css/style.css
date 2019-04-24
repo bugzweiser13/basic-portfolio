@@ -143,14 +143,14 @@ Portfolio Page Layout
 .work {
 	position: relative;
 	float: left;
-	width: 275px;
+	width: 285px;
 	margin: 5px 10px 5px;
 	overflow: auto;
 }
 
-.work:nth-child(even) {
+/*.work:nth-child(even) {
 	margin-right: 10px;
-}
+}*/
 
 .work img {
 	width: 100%;
